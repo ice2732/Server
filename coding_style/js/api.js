@@ -1,7 +1,6 @@
 const debug = require('debug')('api');
-const express = require('express');
+const router = require('express')();
 const db = require('../storage');
-const router = express();
 
 // Set Nickname
 router.post('/account/nickname', async (req, res, next) => {
