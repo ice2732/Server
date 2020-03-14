@@ -1,4 +1,6 @@
-# Game Server Developer
+# Server Developer
+
+[![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/ice2732/my-stack)
 
 ### Server Architecture
 
