@@ -3,28 +3,27 @@ const router = require('express')();
 const db = require('../storage');
 
 // Set Nickname
-router.post('/account/nickname', async (req, res, next) => {
+router.post('/account/nickname', async (req, res) => {
   debug(req);
 
   try {
-    if(!req.nickname) {
-      return next(`Not exist Nickname`);
+    const { account_idx, nickname, } = req;
+    if(!nickname) {
+      throw { error: 'Invalid Nickname', };
     }
 
-    const account = await db.account.get_account(req.account_idx);
+    const account = await db.account.get_account(account_idx);
     if(!account) {
-      return next(`Not exist account. req.account_idx: ${req.account_idx}`);
+      throw { error: 'Not exist account', };
     }
 
-    account.nickname = req.nickname;
+    account.nickname = nickname;
     await account.save();
+    res.ok();
   } catch(err) {
     debug(err);
-
-    return next(`Error : ${err.name}`);
+    res.error(err.error);
   }
-
-  next();
 });
 
 module.exports = router;
