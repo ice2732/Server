@@ -4,6 +4,5 @@
 
 ### Server Architecture
 
-[최근 출시했던 게임의 서버 구조](https://github.com/ice2732/Server/tree/master/architecture)
-
+[2018년 출시했던 서버 인프라](https://github.com/ice2732/Server/tree/master/architecture)
 

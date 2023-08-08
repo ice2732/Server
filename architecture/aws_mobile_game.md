@@ -1,5 +1,5 @@
 
-## 최근 구현했던 서버의 인프라 구조
+## 2018년 출시했던 서버 인프라
 
 ### GameServer(HTTPS)
 ```
@@ -37,6 +37,4 @@ AngularJS
 FluentD
 Google Bigquery
 ```
-
-
 
