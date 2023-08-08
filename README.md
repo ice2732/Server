@@ -4,7 +4,7 @@
 
 ### Server Architecture
 
-[2018년 출시했던 서버 인프라](https://github.com/ice2732/Server/tree/develop/architecture/2018/aws_2018.png)
+[2018년 출시했던 서버 인프라](https://github.com/ice2732/Server/tree/master/architecture/2018/aws_2018.png)
 
-[2023년 출시했던 서버 인프라](https://github.com/ice2732/Server/tree/develop/architecture/2023/aws_2023.png)
+[2023년 출시했던 서버 인프라](https://github.com/ice2732/Server/tree/master/architecture/2023/aws_2023.png)
 
